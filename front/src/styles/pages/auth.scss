@@ -1,0 +1,133 @@
+
+.auth {
+  background: url(../../images/auth-bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 70%;
+    display: flex;
+    .left {
+      background: #3e3f3dcc;
+      width: 40%;
+      text-align: center;
+      color: #fff;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .logo {
+        svg {
+          stroke: #f00;
+        }
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-top: 0;
+      }
+
+      .features {
+        padding: 0;
+        margin-bottom: 0;
+        text-align: left;
+        li {
+          list-style: circle;
+          margin-top: 5px;
+        }
+      }
+    }
+    .right {
+      background: #ffffffdd;
+      width: 60%;
+      padding: 50px;
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .top-button {
+          button {
+            border: none;
+            background: none;
+            font-size: 21px;
+            padding: 0;
+            margin-right: 20px;
+            color: $secondary;
+            &:first-child {
+              border-right: 1px solid $secondary;
+              padding-right: 20px;
+              color: $primary;
+            }
+          }
+        }
+        .tip {
+          opacity: .8;
+          a {
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .input-box {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        label {
+          font-size: 18px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: all ease .3s;
+          &.focused {
+            top: -16px;
+            font-size: 16px;
+          }
+        }
+        input {
+          margin-top: 5px;
+          border: 0;
+          outline: none;
+          border-bottom: 1px solid $secondary;
+          background: none;
+          font-size: 16px;
+          height: 22px;
+        }
+        .eye {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 22px;
+          border: 0;
+          padding: 0;
+          background: none;
+          font-size: 18px;
+        }
+      }
+      .forgot {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        a {
+          color: #000;
+          opacity: .7;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .submit {
+        margin-top: 30px;
+      }
+    }
+  }
+}

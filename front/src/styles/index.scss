@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+button {
+  cursor: pointer;
+}
+
+.submit {
+  background: $primary;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 100px;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  transition: all ease .3s;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 208px;
+    height: 58px;
+    border-radius: 100px;
+    border: 1px solid $primary;
+    box-sizing: border-box;
+    transition: all ease .3s;
+  }
+  &:hover {
+    color: $primary;
+    background: #fff;
+    &::before {
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 50px;
+    }
+  }
+}
+
+
+@import './pages/auth.scss';
